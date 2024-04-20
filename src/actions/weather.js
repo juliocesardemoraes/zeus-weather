@@ -1,6 +1,9 @@
 const requestOptions = {
   method: "GET",
   redirect: "follow",
+  headers: {
+    "Content-Type": "application/json",
+  },
 };
 
 export const getWeather = async (cityName) => {
